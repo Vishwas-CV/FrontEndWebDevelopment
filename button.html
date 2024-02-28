@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title> Sample button </title>
+</head>
+<body>
+  <button> Click Me </button>
+  <div class="container"></div>
+  <script>
+    function onClickEvent(){
+      const el = document.createElement('p');
+      el.innerText= 'clicked the button';
+      document.querySelector('.container').appendChild(el);
+    }
+    document.querySelector('button').onclick = onClickEvent;
+  </script>
+</body>
+</html>
